@@ -8,12 +8,14 @@
 <script>
 import Map from './components/Map'
 import TypeWriter from './components/TypeWriter'
+import All from './components/All'
 // import Sample from './components/Sample'
 
 export default {
   components: {
     Map,
-    TypeWriter
+    TypeWriter,
+    All
   },
   data () {
     return {
@@ -23,6 +25,9 @@ export default {
   events: {
     greeting () {
       this.comp = 'Map'
+    },
+    all () {
+      this.comp = 'All'
     }
   }
 }

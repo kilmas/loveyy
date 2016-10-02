@@ -18,11 +18,12 @@ export default {
     return {
       msg: 'Hello World!',
       html: '',
-      ok: true
+      ok: false
     }
   },
   methods: {
     writer () {
+      let typeWriter = document.getElementById('typeWriter')
       let str = html
       let progress = 0
       let self = this
@@ -33,8 +34,10 @@ export default {
         } else {
           progress++
         }
+        typeWriter.play()
         self.html = (str.substring(0, progress) + (progress & 1 ? '_' : ''))
         if (progress >= str.length) {
+          typeWriter.pause()
           self.ok = true
 		// $('#content').append('<div style="text-align:center;font-size:32px;">let\'s go</div>');
           clearInterval(timer)
@@ -47,7 +50,10 @@ export default {
   },
   ready () {
     // this.html = html
-    this.writer()
+    let seft = this
+    setTimeout(function () {
+      seft.writer()
+    }, 3000)
     // console.log(this.$el('#code'))
   }
 }

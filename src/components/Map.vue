@@ -40,7 +40,7 @@
     </polyline>
     
   </map>
-  <audio id="myAudio" src="http://www.netnook.cn/static/loveyy/tiankongzhicheng.mp3"></audio>
+
 </div>
 </template>
 
@@ -228,6 +228,9 @@ export default {
           clearTimeout(loop)
           callback = callback || function () {}
           callback()
+          setTimeout(function () {
+            seft.all()
+          }, 6000)
           return false
         }
         seft.center = seft.carLoad[i]
@@ -278,7 +281,7 @@ export default {
         seft.zoom = 15
         seft.infowin = false
         seft.fairbanks()
-      }, 1500)
+      }, 5000)
     },
     daltonHighway () {
       this.info = '<br/><img style="width:100%" src="http://www.netnook.cn/static/loveyy/DaltonHighway/1.jpg">'
@@ -288,7 +291,7 @@ export default {
         seft.infoWP = seft.DaltonHighway
         seft.center = seft.DaltonHighway
         seft.showPic()
-      }, 3000)
+      }, 5000)
     },
     fairbanks () {
       this.info = '<br/><img style="width:100%" src="http://www.netnook.cn/static/loveyy/Wiseman/5.jpg">'
@@ -299,7 +302,7 @@ export default {
         seft.center = seft.Fairbanks
         this.info = '<br/><img style="width:100%" src="http://www.netnook.cn/static/loveyy/Fairbanks/7.jpg">'
         seft.wiseman()
-      }, 3000)
+      }, 5000)
     },
     wiseman () {
       this.info = '<br/><img style="width:100%" src="http://www.netnook.cn/static/loveyy/Fairbanks2/1.jpg">'
@@ -310,7 +313,7 @@ export default {
         seft.center = seft.Wiseman
         seft.info = '<br/><img style="width:100%" src="http://www.netnook.cn/static/loveyy/Fairbanks2/2.jpg">'
         seft.university()
-      }, 3000)
+      }, 5000)
     },
     university () {
       let seft = this
@@ -319,7 +322,7 @@ export default {
         seft.center = seft.University
         this.info = '<br/><img style="width:100%" src="http://www.netnook.cn/static/loveyy/University/1.jpg">'
         seft.daltonHighway()
-      }, 3000)
+      }, 5000)
     },
     maKerLA (callback) {
       this.LAvisible = true
@@ -347,7 +350,7 @@ export default {
         seft.infowin = false
         seft.makerF()
         seft.drawLine(null, {lat: 64.8377360070, lng: -147.7159881592})
-      }, 3000)
+      }, 5000)
     },
     fly (callback) {
       // let xab = LocA.lat-LocB.lat
@@ -372,7 +375,7 @@ export default {
         seft.Icon = arg[i]
         seft.zoom = 3
         i++
-        loop = setTimeout(loopFly, 1500)
+        loop = setTimeout(loopFly, 2000)
       }
       loopFly()
     },
@@ -382,7 +385,10 @@ export default {
         this.plPath.push(line)
       }
       callback = callback || function () {}
-      setTimeout(callback, 1500)
+      setTimeout(callback, 2000)
+    },
+    all () {
+      this.$dispatch('all')
     }
   },
   components: {
