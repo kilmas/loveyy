@@ -39,7 +39,6 @@ export default {
         if (progress >= str.length) {
           typeWriter.pause()
           self.ok = true
-		// $('#content').append('<div style="text-align:center;font-size:32px;">let\'s go</div>');
           clearInterval(timer)
         }
       }, 75)
@@ -49,12 +48,10 @@ export default {
     }
   },
   ready () {
-    // this.html = html
     let seft = this
     setTimeout(function () {
       seft.writer()
     }, 3000)
-    // console.log(this.$el('#code'))
   }
 }
 </script>

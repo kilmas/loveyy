@@ -256,7 +256,7 @@ export default {
         callback = callback || function () {}
         callback()
         seft.zoomTo(1, 1000, seft.world)
-      }, 5000)
+      }, 8000)
     },
     world (callback) {
       let seft = this
