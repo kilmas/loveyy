@@ -1,2 +1,2 @@
 # loveyy
-i.loveyy.xyz
+[i.loveyy.xyz](http://i.loveyy.xyz)
