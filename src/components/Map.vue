@@ -60,7 +60,7 @@ export default {
       infoWin: '',
       infowin: false,
       infoWP: {lat: 23.0471681521, lng: 113.1254234346},
-      icon: {url: 'https://www.kuanglihui.com/static/loveyy/airplane.png'},
+      icon: {url: 'https://www.kuanglihui.com/weixin/static/loveyy/airplane.png'},
       plane: require('../assets/plane.png'),
       infoWinP: {lat: 23.0471681521, lng: 113.1254234346},
       mposition: {lat: 23.0471681521, lng: 113.1254234346},
@@ -116,18 +116,18 @@ export default {
       ],
       plvisible: false,
       pictureHtml: [
-        '<br/><img style="width:100%" src="https://www.kuanglihui.com/static/loveyy/Wiseman/1.jpg">',
-        '<br/><img style="width:100%" src="https://www.kuanglihui.com/static/loveyy/Wiseman/2.jpg">',
-        '<br/><img style="width:100%" src="https://www.kuanglihui.com/static/loveyy/DaltonHighway/1.jpg">',
-        '<br/><img style="width:100%" src="https://www.kuanglihui.com/static/loveyy/DaltonHighway/2.jpg">',
-        '<br/><img style="width:100%" src="https://www.kuanglihui.com/static/loveyy/DaltonHighway/3.jpg">',
-        '<br/><img style="width:100%" src="https://www.kuanglihui.com/static/loveyy/DaltonHighway/4.jpg">',
-        '<br/><img style="width:100%" src="https://www.kuanglihui.com/static/loveyy/DaltonHighway/5.jpg">',
-        '<br/><img style="width:100%" src="https://www.kuanglihui.com/static/loveyy/Wiseman/3.jpg">',
-        '<br/><img style="width:100%" src="https://www.kuanglihui.com/static/loveyy/Wiseman/4.jpg">',
-        '<br/><img style="width:100%" src="https://www.kuanglihui.com/static/loveyy/Fairbanks/1.jpg">',
-        '<br/><img style="width:100%" src="https://www.kuanglihui.com/static/loveyy/Fairbanks/2.jpg">',
-        '<br/><img style="width:100%" src="https://www.kuanglihui.com/static/loveyy/Fairbanks2/1.jpg">'
+        '<br/><img style="width:100%" src="https://www.kuanglihui.com/weixin/static/loveyy/Wiseman/1.jpg">',
+        '<br/><img style="width:100%" src="https://www.kuanglihui.com/weixin/static/loveyy/Wiseman/2.jpg">',
+        '<br/><img style="width:100%" src="https://www.kuanglihui.com/weixin/static/loveyy/DaltonHighway/1.jpg">',
+        '<br/><img style="width:100%" src="https://www.kuanglihui.com/weixin/static/loveyy/DaltonHighway/2.jpg">',
+        '<br/><img style="width:100%" src="https://www.kuanglihui.com/weixin/static/loveyy/DaltonHighway/3.jpg">',
+        '<br/><img style="width:100%" src="https://www.kuanglihui.com/weixin/static/loveyy/DaltonHighway/4.jpg">',
+        '<br/><img style="width:100%" src="https://www.kuanglihui.com/weixin/static/loveyy/DaltonHighway/5.jpg">',
+        '<br/><img style="width:100%" src="https://www.kuanglihui.com/weixin/static/loveyy/Wiseman/3.jpg">',
+        '<br/><img style="width:100%" src="https://www.kuanglihui.com/weixin/static/loveyy/Wiseman/4.jpg">',
+        '<br/><img style="width:100%" src="https://www.kuanglihui.com/weixin/static/loveyy/Fairbanks/1.jpg">',
+        '<br/><img style="width:100%" src="https://www.kuanglihui.com/weixin/static/loveyy/Fairbanks/2.jpg">',
+        '<br/><img style="width:100%" src="https://www.kuanglihui.com/weixin/static/loveyy/Fairbanks2/1.jpg">'
       ],
       carPic: [
         {lat: 67.5144121170, lng: -149.8503398895},
@@ -222,7 +222,7 @@ export default {
       let i = 0
       let seft = this
       seft.zoom = 12
-      this.icon = {url: 'https://www.kuanglihui.com/static/loveyy/car.png'}
+      this.icon = {url: 'https://www.kuanglihui.com/weixin/static/loveyy/car.png'}
       let loopPic = function () {
         if (i === length) {
           clearTimeout(loop)
@@ -268,7 +268,7 @@ export default {
       this.Fvisible = true
       let seft = this
       setTimeout(function () {
-        seft.icon = {url: 'https://www.kuanglihui.com/static/loveyy/airplane1.png'}
+        seft.icon = {url: 'https://www.kuanglihui.com/weixin/static/loveyy/airplane1.png'}
         seft.fly(seft.destination, [seft.LA, {lat: 49.2678046600, lng: -120.1464843750}, {lat: 60.3269477430, lng: -133.0664062500}, {lat: 64.8377360070, lng: -147.7159881592}])
       }, 2000)
     },
@@ -284,7 +284,7 @@ export default {
       }, 5000)
     },
     daltonHighway () {
-      this.info = '<br/><img style="width:100%" src="https://www.kuanglihui.com/static/loveyy/DaltonHighway/1.jpg">'
+      this.info = '<br/><img style="width:100%" src="https://www.kuanglihui.com/weixin/static/loveyy/DaltonHighway/1.jpg">'
       this.infowin = true
       let seft = this
       setTimeout(function () {
@@ -294,24 +294,24 @@ export default {
       }, 5000)
     },
     fairbanks () {
-      this.info = '<br/><img style="width:100%" src="https://www.kuanglihui.com/static/loveyy/Wiseman/5.jpg">'
+      this.info = '<br/><img style="width:100%" src="https://www.kuanglihui.com/weixin/static/loveyy/Wiseman/5.jpg">'
       this.infowin = true
       let seft = this
       setTimeout(function () {
         seft.infoWP = seft.Fairbanks
         seft.center = seft.Fairbanks
-        this.info = '<br/><img style="width:100%" src="https://www.kuanglihui.com/static/loveyy/Fairbanks/7.jpg">'
+        this.info = '<br/><img style="width:100%" src="https://www.kuanglihui.com/weixin/static/loveyy/Fairbanks/7.jpg">'
         seft.wiseman()
       }, 5000)
     },
     wiseman () {
-      this.info = '<br/><img style="width:100%" src="https://www.kuanglihui.com/static/loveyy/Fairbanks2/1.jpg">'
+      this.info = '<br/><img style="width:100%" src="https://www.kuanglihui.com/weixin/static/loveyy/Fairbanks2/1.jpg">'
       this.infowin = true
       let seft = this
       setTimeout(function () {
         seft.infoWP = seft.Wiseman
         seft.center = seft.Wiseman
-        seft.info = '<br/><img style="width:100%" src="https://www.kuanglihui.com/static/loveyy/Fairbanks2/2.jpg">'
+        seft.info = '<br/><img style="width:100%" src="https://www.kuanglihui.com/weixin/static/loveyy/Fairbanks2/2.jpg">'
         seft.university()
       }, 5000)
     },
@@ -320,7 +320,7 @@ export default {
       setTimeout(function () {
         seft.infoWP = seft.University
         seft.center = seft.University
-        this.info = '<br/><img style="width:100%" src="https://www.kuanglihui.com/static/loveyy/University/1.jpg">'
+        this.info = '<br/><img style="width:100%" src="https://www.kuanglihui.com/weixin/static/loveyy/University/1.jpg">'
         seft.daltonHighway()
       }, 5000)
     },

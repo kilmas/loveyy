@@ -6,7 +6,7 @@
         </div>
     </div>
     <div class="bottom" v-if="ok" @click="go">
-      <img src="https://www.kuanglihui.com/static/loveyy/start.png">
+      <img src="https://www.kuanglihui.com/weixin/static/loveyy/start.png">
     </div>
 </div>
 </template>
