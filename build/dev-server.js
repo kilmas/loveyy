@@ -21,11 +21,11 @@ var devMiddleware = require('webpack-dev-middleware')(compiler, {
   stats: {
     colors: true,
     chunks: false
-  },
-  watchOptions: {
-		aggregateTimeout: 300,
-		poll: true
   }
+  // watchOptions: {
+	// 	aggregateTimeout: 300,
+	// 	poll: true
+  // }
 })
 
 var hotMiddleware = require('webpack-hot-middleware')(compiler)
