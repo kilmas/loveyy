@@ -1,5 +1,5 @@
 <template>
-</div>
+<div>
   <map
     :center.sync="center"
     :zoom.sync="zoom"
